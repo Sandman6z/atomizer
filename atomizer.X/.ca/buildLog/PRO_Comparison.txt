@@ -1,0 +1,82 @@
+make -f nbproject/Makefile-PRO_Comparison.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+rm -f  -r .ca/build/PRO_Comparison/production
+rm -f  -r .ca/dist/PRO_Comparison/production
+make[1]: Leaving directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+[32mCLEAN SUCCESSFUL (total time: 204ms)[0m
+make -f nbproject/Makefile-PRO_Comparison.mk SUBPROJECTS= .build-conf
+make  -f nbproject/Makefile-PRO_Comparison.mk .ca/dist/PRO_Comparison/production/atomizer.X.production.hex
+make[2]: Entering directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F1578 -c   -mdfp="C:/Users/zbn02/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_PRO_Comparison=PRO_Comparison  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -mafrlcsj     -o .ca/build/PRO_Comparison/production/User/init.p1 User/init.c 
+make[2]: Leaving directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+make[2]: Entering directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F1578 -c   -mdfp="C:/Users/zbn02/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_PRO_Comparison=PRO_Comparison  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -mafrlcsj     -o .ca/build/PRO_Comparison/production/User/Fog.p1 User/Fog.c 
+User/Fog.c:80:36: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+        PWM3DCL = (PWMT[frq] >> 1) + 1;
+                ~ ~~~~~~~~~~~~~~~~~^~~
+User/Fog.c:120:32: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+    PWM3DCL = (PWMT[frq] >> 1) + 1;
+            ~ ~~~~~~~~~~~~~~~~~^~~
+2 warnings generated.
+make[2]: Leaving directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+make[2]: Entering directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F1578 -c   -mdfp="C:/Users/zbn02/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_PRO_Comparison=PRO_Comparison  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -mafrlcsj     -o .ca/build/PRO_Comparison/production/User/int.p1 User/int.c 
+User/int.c:8:32: warning: unknown attribute 'no_auto_psv' ignored [-Wunknown-attributes]
+void __attribute__((interrupt, no_auto_psv)) _T0Interrupt(void)
+                               ^
+User/int.c:8:21: warning: unknown attribute 'interrupt' ignored [-Wunknown-attributes]
+void __attribute__((interrupt, no_auto_psv)) _T0Interrupt(void)
+                    ^
+2 warnings generated.
+make[2]: Leaving directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+make[2]: Entering directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F1578 -c   -mdfp="C:/Users/zbn02/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_PRO_Comparison=PRO_Comparison  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -mafrlcsj     -o .ca/build/PRO_Comparison/production/User/newmain.p1 User/newmain.c 
+User/newmain.c:130:16: warning: expression result unused [-Wunused-value]
+    GetADC(10) >> 5;
+    ~~~~~~~~~~ ^  ~
+User/newmain.c:247:25: warning: implicit conversion turns floating-point number into integer: 'double' to 'uword' (aka 'unsigned int') [-Wfloat-conversion]
+        ADMin = ADC_Val - (ADC_Val * 0.12);
+              ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~
+User/newmain.c:248:25: warning: implicit conversion turns floating-point number into integer: 'double' to 'uword' (aka 'unsigned int') [-Wfloat-conversion]
+        ADMax = ADC_Val + (ADC_Val * 0.12); // before 12 ;
+              ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~
+User/newmain.c:250:26: warning: implicit conversion turns floating-point number into integer: 'double' to 'uword' (aka 'unsigned int') [-Wfloat-conversion]
+        ADMin2 = ADC_Val - (ADC_Val * 0.06);
+               ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~
+User/newmain.c:251:26: warning: implicit conversion turns floating-point number into integer: 'double' to 'uword' (aka 'unsigned int') [-Wfloat-conversion]
+        ADMax2 = ADC_Val + (ADC_Val * 0.06); // before 12 ;
+               ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~
+User/newmain.c:277:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        else if (L_LED = 1 && H_LED == 0)
+                 ~~~~~~^~~~~~~~~~~~~~~~~
+User/newmain.c:277:24: note: place parentheses around the assignment to silence this warning
+        else if (L_LED = 1 && H_LED == 0)
+                       ^
+                 (                      )
+User/newmain.c:277:24: note: use '==' to turn this assignment into an equality comparison
+        else if (L_LED = 1 && H_LED == 0)
+                       ^
+                       ==
+6 warnings generated.
+make[2]: Leaving directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+make[2]: Entering directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F1578 -Wl,-Map=.ca/dist/PRO_Comparison/production/atomizer.X.production.map  -DXPRJ_PRO_Comparison=PRO_Comparison  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="C:/Users/zbn02/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -mafrlcsj -std=c99 -gdwarf-3 -mstack=compiled:auto:auto      -Wl,--memorysummary,.ca/dist/PRO_Comparison/production/memoryfile.xml -o .ca/dist/PRO_Comparison/production/atomizer.X.production.elf  .ca/build/PRO_Comparison/production/User/Fog.p1 .ca/build/PRO_Comparison/production/User/init.p1 .ca/build/PRO_Comparison/production/User/int.p1 .ca/build/PRO_Comparison/production/User/newmain.p1     
+User/int.c:8:: warning: (520) function "__T0Interrupt" is never called
+User/newmain.c:277:: warning: (759) expression generates no code
+
+Memory Summary:
+    Program space        used   FC7h (  4039) of  1000h words   ( 98.6%)
+    Data space           used   103h (   259) of   200h bytes   ( 50.6%)
+    EEPROM space         None available
+    Configuration bits   used     2h (     2) of     2h words   (100.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+
+
+You have compiled using a FREE license.
+With a PRO license, memory use would be:
+    Program space        used   BCAh (  3018) of  1000h words   ( 73.7%)
+    Data space           used   103h (   259) of   200h bytes   ( 50.6%)
+
+
+make[2]: Leaving directory 'C:/Users/zbn02/Desktop/test1/atomizer.X'
+[32mBUILD SUCCESSFUL (total time: 10s)[0m
